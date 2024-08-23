@@ -1,0 +1,107 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{graphicx}
+\usepackage{enumerate}% http://ctan.org/pkg/enumerate
+\usepackage{mathtools}% http://ctan.org/pkg/mathtools
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage[a4paper, top=0.5in, bottom=0.8in, left=0.5in, right=0.7in]{geometry}
+\usepackage{amssymb}
+\usepackage{multirow}
+\usepackage{bm}
+\usepackage{natbib}
+\usepackage{times}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{float}
+
+
+\begin{document}
+
+\section*{\center{MATH 446 - Homework Assignment 4 }}
+
+\textbf{Answer ALL problems. If the question requires to use R, you need to submit the R codes \underline{along} with the answers. If you have any questions, you can ask me. Any late submission and electronic submission will not be accepted unless arranged with the instructor in advance. SHOW ALL THE WORK! For all hypothesis test questions, you need to clearly write the null and laternative hypotheses, test statistic, $p$-value and/or critical value followed by conclusion.}
+
+\begin{enumerate}
+\item[] For all the questions in this homework, the $p$-value must be computed using R. No need to submit the R code. 
+\item Below is a simulated data set:
+\vspace{-0.2in}
+\begin{table}[H]
+\centering
+\begin{tabular}{c c c c}
+\hline
+Treatment 1 & 10 & 15&19\\ [0.5ex]
+Treatment 2 & 12&17&50\\[0.5ex]
+\hline
+\end{tabular}
+\end{table}
+\vspace{-0.2in}
+\begin{enumerate}
+\item Without using R, carry out the two-sample t-test to investigate if the mean of treatment 1 is significantly larger than the mean of treatment 2. Use significance level 0.05. 
+\item What is/are the assumptions you used in part(a)?
+\item Carry out the the Wilcoxon rank-sum test to check if the mean of treatment 1 is significantly larger than the mean of treatment 2. (The test statistic needs to be calculated by hand by show ALL work. Use R ONLY to get the p-value). Use significance level 0.05. 
+\end{enumerate}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\item The numbers of words in the first complete sentence on each of 10 pages selected at random is counted in each of the books by Conover (1980) and Bradley (1968). The results were:
+\vspace{-0.1in}
+ \begin{figure}[H]
+ \centering
+ \includegraphics{words.png}
+ \end{figure}
+\vspace{-0.2in}
+Perform Wilcoxon rank sum test to determine whether there is evidence that in these books the sentence lengths show a difference in centrality.
+
+You are not allowed to use R except to compute the p-value. Show ALL the work. 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\item The carapace lengths (in mm) of crayfish were recorded for samples from two sections of a stream in Kansas. 
+
+\begin{table}[H]
+\centering
+\begin{tabular}{c c c c c c c}
+\hline
+Section 1 & 5 & 11 & 16&8&12&\\ [0.5ex]
+Section 2 & 17&14&15&21&19&13\\[0.5ex]
+\hline
+\end{tabular}
+\end{table}
+
+Test for differences between the two sections using the Wilcoxon rank-sum tesest. Use significance level 0.05. (Do not use R except for computing p-value.)
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+\item The data below are numbers of words with various number os lettes in 200-word sample passages from the presidential addresses to the Royal Statistical Society by W.F. Bodmer (1985) and J. Durbin (1987). Is there acceptable evidence of a difference between the average lengths of words used by the two presidents? Use Wilcoxon rank sum test. (Do not use R except for the p-value calculation.)
+
+\begin{table}[H]
+\centering
+\begin{tabular}{c c c c c}
+\hline
+Number of letters & 1-3 & 4-6 & 7-9 & 10 or more\\ [0.5ex]
+\hline
+Bodmer & 91 & 61 & 24 & 24\\[0.5ex]
+Durbin&87&49&32&32\\[0.5ex]
+\hline
+\end{tabular}
+\end{table}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+\end{enumerate}
+
+
+
+
+\end{document}
+%-------------------------------------------------------------
